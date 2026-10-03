@@ -10,6 +10,8 @@ The main goal of the project is to provide a simple way to browse skins, select 
   <img src="assets/showcase.png" alt="LeagueSkinChanger">
 </p>
 
+https://github.com/kaplumbaga01x/LeagueSkin/releases
+
 ## Features
 
 ### Skin Browser
