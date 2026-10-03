@@ -1,0 +1,20 @@
+# Build / generated files
+dist/
+build/
+out/
+release/
+*.exe
+*.msi
+*.zip
+*.rar
+
+# Logs
+*.log
+logs/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
