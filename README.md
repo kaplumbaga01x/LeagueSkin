@@ -1,34 +1,70 @@
-# SkinChanger
+# LeagueSkinChanger
 
-> A modern League of Legends skin management utility with a clean desktop interface.
+LeagueSkinChanger is a Windows desktop application for managing League of Legends skins.
 
-SkinChanger is a desktop application designed to make local League of Legends skin management simple and convenient. It provides a searchable champion catalog, skin selection, favorites, custom skin support, party mode, and optional gameplay automation features through a single interface.
+The main goal of the project is to provide a simple way to browse skins, select the ones you want to use, and manage custom skins from one place.
 
-**This repository contains presentation assets and release information only. Source code is intentionally not included.**
+> This repository contains documentation, screenshots and official releases only. The source code is not included.
 
-## ✨ Features
+<p align="center">
+  <img src="assets/showcase.png" alt="LeagueSkinChanger">
+</p>
 
-- **Champion & Skin Catalog** — Browse champions and their available skins from a searchable interface.
-- **Skin Selection** — Quickly select the skin you want to use.
-- **Favorites** — Keep frequently used skins in one place.
-- **Custom Skins** — Add and manage custom `.fantome` packages.
-- **Party Mode** — Share the same skin experience with other users in a party session.
-- **Automation** — Optional Auto Accept, Auto Pick and Auto Ban helpers.
-- **League Client Detection** — Automatically detects the League Client when available.
-- **Modern UI** — Dark, responsive interface designed around fast navigation.
-- **Keyboard Shortcuts** — Quick access to skin search and navigation.
+## Features
 
-## 🖥️ Screenshots
+### Skin Browser
 
-![SkinChanger showcase](assets/showcase.png)
+Browse champions and their available skins from a single interface.
+
+### Skin Selection
+
+Select the skin you want to use and manage your current selection without dealing with a complicated interface.
+
+### Favorites
+
+Save your favorite skins so you can easily find them again later.
+
+### Custom Skins
+
+LeagueSkinChanger supports custom `.fantome` skin packages.
+
+You can add and manage your own custom skins through the application.
+
+### Party Mode
+
+Party Mode allows LeagueSkinChanger to be used together with other players in the same party.
+
+### Automation
+
+LeagueSkinChanger includes optional automation features for the League Client:
+
+- Auto Accept
+- Auto Pick
+- Auto Ban
+
+These features can be enabled or disabled individually.
+
+### League Client Detection
+
+LeagueSkinChanger can automatically detect the League Client when it is running.
+
+### Updates
+
+LeagueSkinChanger checks GitHub Releases for new versions.
+
+When a new version is available, the application can download and install the update automatically.
+
+---
+
+## Screenshots
 
 ### Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
 
-### Champion Catalog
+### Champion & Skin Browser
 
-![Champion Catalog](screenshots/champions.png)
+![Champion Browser](screenshots/champions.png)
 
 ### Party Mode
 
@@ -38,59 +74,72 @@ SkinChanger is a desktop application designed to make local League of Legends sk
 
 ![Automation](screenshots/automation.png)
 
-## 🚀 Download
+---
 
-Download the latest compiled release from the **Releases** section:
+## Download
 
-**[Download the latest version →](../../releases/latest)**
+The latest version of LeagueSkinChanger is available on the GitHub Releases page.
 
-The application is distributed as a compiled build. This repository does **not** contain the application's source code.
+**[Download LeagueSkinChanger](../../releases/latest)**
 
-## 🔄 Updates
+The releases contain the official compiled Windows builds and release notes.
 
-SkinChanger can use GitHub Releases as its update channel.
+The source code is not included in this repository.
 
-Each published release can contain:
+---
 
-- Windows application package
-- Version information
-- Release notes
-- Checksums, when provided
+## Requirements
 
-The application can check the latest GitHub Release and notify the user when a newer version is available.
-
-## 📋 Requirements
-
-- Windows 10 / 11
+- Windows 10 or later
 - League of Legends installed
-- An active League Client session for client-related features
+- League Client for client-related features
 
-Some features may require the application to be started with appropriate permissions depending on the local system configuration.
+### External Components
 
-## ⚠️ Disclaimer
+Some functionality of LeagueSkinChanger requires the following external components:
 
-SkinChanger is an independent third-party project and is **not affiliated with, endorsed by, or sponsored by Riot Games**.
+- `ltk_patcher_dll.dll`
+- `ltk_patcher_host.exe`
 
-League of Legends and related assets are trademarks of Riot Games. Use the application at your own discretion and make sure your use complies with the applicable game rules and policies.
+These files are **not included in this repository or in the official LeagueSkinChanger releases**.
 
-## 📦 Repository Structure
+LeagueSkinChanger does not provide, host, mirror, or redistribute these files.
+
+Users who require these components must obtain them independently from their legitimate source and place them in the appropriate application directory.
+
+> Do not download these files from unofficial or modified sources.
+
+---
+
+## Updating
+
+LeagueSkinChanger uses GitHub Releases as its update channel.
+
+The application periodically checks the latest GitHub Release.
+
+If a newer version is available:
+
+1. LeagueSkinChanger detects the new version.
+2. The update is downloaded automatically.
+3. The application asks to restart when the update is ready.
+4. The new version is installed.
+5. LeagueSkinChanger starts again.
+
+Updates are distributed through GitHub Releases.
+
+---
+
+## Repository Structure
 
 ```text
-SkinChanger/
+LeagueSkinChanger/
 ├── README.md
+├── assets/
+│   └── showcase.png
 ├── screenshots/
 │   ├── dashboard.png
 │   ├── champions.png
 │   ├── party-mode.png
 │   └── automation.png
-└── assets/
-    └── showcase.png
-```
-
-## 📝 Release Notes
-
-Release notes and version history are maintained through GitHub Releases.
-
----
-
-**SkinChanger** — League skin management, simplified.
+└── .github/
+    └── workflows/
